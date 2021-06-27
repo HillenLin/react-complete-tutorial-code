@@ -24,4 +24,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 code/03-writing-more-complex-jsx-code/node_modules/
-code/09-assignment-1-solution/node_modules
+code/09-assignment-1-solution/node_modules/
+code/03-writing-more-complex-jsx-code/node_modules/
+code/03-writing-more-complex-jsx-code/.eslintcache

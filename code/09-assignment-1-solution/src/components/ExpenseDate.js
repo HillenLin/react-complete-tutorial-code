@@ -1,11 +1,12 @@
-import './ExpenseDate.css';
-import Card from "./Card";
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/prop-types */
+import './ExpenseDate.css'
+import Card from './Card'
 
-
-function ExpenseDate(props) {
-  const month = props.date.toLocaleString('en-US', { month: 'long' });
-  const day = props.date.toLocaleString('en-US', { day: '2-digit' });
-  const year = props.date.getFullYear();
+const ExpenseDate = props => {
+  const month = props.date.toLocaleString('en-US', { month: 'long' })
+  const day = props.date.toLocaleString('en-US', { day: '2-digit' })
+  const year = props.date.getFullYear()
 
   return (
     <Card otherClassName="expense-date">
@@ -13,7 +14,7 @@ function ExpenseDate(props) {
       <div className="expense-date__year">{year}</div>
       <div className="expense-date__day">{day}</div>
     </Card>
-  );
+  )
 }
 
-export default ExpenseDate;
+export default ExpenseDate

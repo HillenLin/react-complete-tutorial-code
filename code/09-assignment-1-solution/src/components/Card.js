@@ -1,7 +1,9 @@
-import "./Card.css";
+/* eslint-disable react/prop-types */
+/* eslint-disable react/react-in-jsx-scope */
+import './Card.css'
 
-function Card(props) {
-  return <div className={`card ${props.otherClassName}`}>{props.children}</div>;
+const Card = props => {
+  return <div className={`card ${props.otherClassName}`}>{props.children}</div>
 }
 
-export default Card;
+export default Card

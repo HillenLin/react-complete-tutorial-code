@@ -1,8 +1,14 @@
-import ExpenseDate from "./ExpenseDate";
-import "./ExpenseItem.css";
-import Card from "./Card";
+/* eslint-disable react/prop-types */
+/* eslint-disable react/react-in-jsx-scope */
+import ExpenseDate from './ExpenseDate'
+import './ExpenseItem.css'
+import Card from './Card'
 
-function ExpenseItem(props) {
+const ExpenseItem = props => {
+  const clickHandle = () => {
+
+  }
+
   return (
     <Card otherClassName="expense-item">
       <ExpenseDate date={props.date} />
@@ -10,8 +16,9 @@ function ExpenseItem(props) {
         <h2>{props.title}</h2>
         <div className="expense-item__price">${props.amount}</div>
       </div>
+      <button onClick={clickHandle}>Click</button>
     </Card>
-  );
+  )
 }
 
-export default ExpenseItem;
+export default ExpenseItem
